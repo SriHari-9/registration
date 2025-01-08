@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-hhfo7d31@c-+%da%dhir#e9!#89r(sjejjb!0(!tv*q408(i^4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['deepfake-detection-hhsv.onrender.com']
+
 
 
 # Application definition
