@@ -2,6 +2,6 @@ services:
   - type: web
     name: deepfake-detection
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: python manage.py collectstatic --noinput && pip install -r requirements.txt
     startCommand: startCommand: gunicorn registration.wsgi:application --bind 0.0.0.0:$PORT
     plan: free
