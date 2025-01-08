@@ -2,6 +2,6 @@ services:
   - type: web
     name: deepfake-detection
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: python manage.py makemigrations
     startCommand: python manage.py runserver
     plan: free
